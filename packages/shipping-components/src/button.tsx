@@ -14,7 +14,7 @@ export const Button = ({ children, className, appName }: ButtonProps) => {
       className={className}
       onClick={() => alert(`Hello from your ${appName} app!`)}
     >
-      Test package published to GitHub Packages
+      Teste com build (dist)
       <br />
       {children}
     </button>

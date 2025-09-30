@@ -2,12 +2,13 @@
   "name": "@nadineouro/shipping-components",
   "version": "0.0.2",
   "exports": {
-    "./*": "./src/*.tsx"
+    "./*": "./dist/*.js"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "build": "tsc --outDir dist"
   },
   "devDependencies": {
     "@nadineouro/eslint-config": "*",

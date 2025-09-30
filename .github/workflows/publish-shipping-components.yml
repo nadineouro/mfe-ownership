@@ -23,11 +23,16 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: packages/shipping-components
+        env:
+          NPM_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
 
-      - name: Build package
-        run: npm run build --workspace=packages/shipping-components
+      - name: Build shipping-components
+        run: npm run build
+        working-directory: packages/shipping-components
 
       - name: Publish to GitHub Packages
-        run: npm publish --workspace=packages/shipping-components --registry=https://npm.pkg.github.com
+        run: npm publish --registry=https://npm.pkg.github.com
+        working-directory: packages/shipping-components
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
