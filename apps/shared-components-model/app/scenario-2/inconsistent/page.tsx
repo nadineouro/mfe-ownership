@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Scenario2ShippingBox as ShippingBox } from "@nadineouro/shipping-components";
+import { Scenario2InconsistentShippingBox as ShippingBox } from "@nadineouro/shipping-components";
 import { ProductImages } from "./components/ProductImages";
 import { ProductInfo } from "./components/ProductInfo";
 import { ProductDetailsBlock } from "./components/ProductDetails";
