@@ -6,3 +6,6 @@ export { ShippingBox as Scenario1BugShippingBox } from './scenario-1/bug/Shippin
 
 // Scenario 1 - Fixed version
 export { ShippingBox as Scenario1FixedShippingBox } from './scenario-1/fixed/ShippingBox';
+
+// Scenario 2
+export { ShippingBox as Scenario2ShippingBox } from './scenario-2/ShippingBox';
