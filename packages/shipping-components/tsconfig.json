@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "esnext",
+    "module": "commonjs",
     "strict": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
     "outDir": "dist"
   },
   "include": ["src"],
