@@ -1,7 +1,7 @@
 export const shippingOptions = [
   { name: "Entrega Padrão", price: 7.9, deliveryTime: "2-4 dias úteis" },
   { name: "Expressa", price: 14.9, deliveryTime: "1-2 dias úteis" },
-  { name: "Overnight", price: undefined, deliveryTime: "1 dia útil" },
+  { name: "Overnight", price: 17.9, deliveryTime: "1 dia útil" },
 ];
 
 export const storePickups = [
