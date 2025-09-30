@@ -1,6 +1,6 @@
 "use client";
 
-import { TruckIcon, StoreIcon } from "../../icons";
+import { TruckIcon, StoreIcon } from "../icons";
 
 interface Option {
   name: string;
