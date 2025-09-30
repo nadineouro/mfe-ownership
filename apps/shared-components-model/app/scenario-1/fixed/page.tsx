@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// Versão sem tratamento de preço inválido
-import { Scenario1BugShippingBox as ShippingBox } from "@nadineouro/shipping-components";
+// Versão com tratamento de preço inválido (fixed)
+import { Scenario1FixedShippingBox as ShippingBox } from "@nadineouro/shipping-components";
 import { ProductImages } from "./components/ProductImages";
 import { ProductInfo } from "./components/ProductInfo";
 import { ProductDetailsBlock } from "./components/ProductDetails";
