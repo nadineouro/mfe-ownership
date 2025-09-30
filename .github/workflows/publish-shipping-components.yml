@@ -21,6 +21,11 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@nadineouro"
 
+      - name: Set up .npmrc for GitHub Packages
+        run: echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.GH_PACKAGES_TOKEN }}
+
       - name: Install dependencies
         run: npm install
         working-directory: packages/shipping-components

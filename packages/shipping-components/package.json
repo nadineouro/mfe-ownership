@@ -8,11 +8,9 @@
     "lint": "eslint . --max-warnings 0",
     "generate:component": "turbo gen react-component",
     "check-types": "tsc --noEmit",
-    "build": "tsc --outDir dist"
+    "build": "rm -rf dist && tsc --outDir dist"
   },
   "devDependencies": {
-    "@nadineouro/eslint-config": "*",
-    "@nadineouro/typescript-config": "*",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
