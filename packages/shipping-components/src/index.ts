@@ -9,3 +9,6 @@ export { ShippingBox as Scenario1FixedShippingBox } from './scenario-1/fixed/Shi
 
 // Scenario 2
 export { ShippingBox as Scenario2ShippingBox } from './scenario-2/ShippingBox';
+
+// Scenario 3
+export { ShippingBox as Scenario3ShippingBox } from './scenario-3/ShippingBox';
